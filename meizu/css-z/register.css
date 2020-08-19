@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width: 1200px;
+    height: 68px;
+    margin: auto;
+    line-height: 68px;
+}
+.logo img{
+    width: 110px;
+    height: 20px;
+}
+section{
+    background-color: rgb(239,253,254);
+    background-image: url(../images-z/pic-flyme.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 750px;
+    background-position: center;
+    position: relative;
+}
+.zhuce{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    width: 368px;
+    height: 316px;
+    right: 10%;
+}
+.zhuce>img{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.zhuce form{
+    position: absolute;
+    width: 368px;
+    height: 100%;
+}
+.zc{
+    margin: auto;
+    width: 200px;
+    font-size: 1.3em;
+    color: rgb(56,122,255);
+	text-align: center;
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	
+}
+select:focus{
+	outline: none;
+}
+.sjh{
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 298px;
+    border: 1px solid rgb(184,184,184);
+    top: 45%;
+	margin-bottom: 20px;
+}
+.sjh>select,.sjh1{
+    height: 40px;
+    border: none;
+}
+.sjh>select{
+    border-right: 1px solid rgb(184,184,184);
+}
+.sjh1{
+    outline: none;
+}
+.radius1{
+    border: 1px solid  rgb(56,122,255);
+    height: 10px;
+    width: 10px;
+    background-color: rgb(56,122,255);
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.radius2{
+    border: 1px solid  rgb(56,122,255);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    top: 316px;
+    left: 54px;
+}
+.tongyi{
+    color: black;
+    width: 290px;
+    height: 40px;
+    left: 0;
+    right: 0;
+    margin:20px auto;
+    top: 60%;
+    font-size: 0.8em;
+	display: block;
+}
+.tongyi a{
+    color:rgb(56,122,255) ;
+}
+.reg{
+    background-color: rgb(56,122,255);
+    color: white;
+    border: none;
+    width: 298px;
+    height: 40px;
+    margin:20px auto;
+	display: block;
+}
+.login{
+    color: rgb(56,122,255);
+	display: block;
+	width: 298px;
+	margin: auto;
+}
+.foot{
+    padding-top: 40px;
+}
+.foot1>li{
+    float: left;
+    margin-right: 5px;
+    position: relative;
+}
+.foot1>li:not(:last-of-type):after{
+    content: '|';
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.foot1{
+    margin-left: 120px;
+    overflow: hidden;
+    width: 1000px;
+    height: 35px;
+    font-size: 0.8em;
+	margin: auto;
+}
+.foot1>li a{
+    color: black;
+}
+ul.foot1>li:last-of-type:after{
+    content: '	\25C4';
+    color: rgb(152,153,153);
+    font-size: 8px;
+    position: absolute;
+    top: 8px;
+}
+.foot1 p,.foot1 a{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+}
+.foot1 p{
+    margin-left: 60px;
+}
+.foot1>li:not(:nth-of-type(n+3))>a{
+	color: #b0b0b0;
+}
+.foot1>li:not(:nth-of-type(n+3)):hover>a{
+	color: #000000;
+}
+#kefu{
+    margin-left: 20px;
+    background-color: rgb(56,122,255);
+    color: white;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    width: 60px;
+    border-radius: 3px;
+    margin-right: 180px;
+    text-align: center;
+    margin-top: 10px;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 1918204 */
+    src: url('//at.alicdn.com/t/font_1918204_fav1td231at.eot');
+    src: url('//at.alicdn.com/t/font_1918204_fav1td231at.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:32px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color:rgb(184,184,184) ;
+    margin-left:  10px;
+}
+.weixin img{
+
+}
+.weibo:hover .weibo{
+    color: red;
+}
+.weixin:hover .weixin{
+    color: green;
+}
+.kongjian:hover .kongjian{
+    color: #fae746;
+}
+.foot2{
+    color:rgb(152,153,153);
+    font-size: 0.7em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 118px;
+}
+.foot2 span{
+    margin-right: 5px;
+}
+.foot2 a{
+    color:rgb(152,153,153);
+    margin-right: 5px;
+}

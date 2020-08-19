@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background-color: rgb(242,242,242);
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 118px;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: white;
+}
+header>div{
+    height: 36px;
+    width: 1349px;
+    background-color: rgb(72,72,72);
+}
+.nav1{
+    width: 1040px;
+    height: 36px;
+    margin: 0 auto;
+    color: white;
+    overflow: hidden;
+}
+.nav2{
+    width: 1040px;
+    height: 82px;
+    margin: 0 auto;
+}
+/*导航上部内容*/
+.nav1 a{
+    color: white;
+    transition: all .2s linear;
+    opacity: 0.7;
+    display: inline-block;
+    line-height: 36px;
+}
+.nav1 a:hover{
+    opacity: 1;
+}
+.nav1 li:not(:last-child){
+    float: left;
+    margin-right: 22px;
+}
+.nav1 li:last-child{
+    float: right;
+    padding-left: 23px;
+}
+
+/*导航下部内容*/
+.nav2 li{
+    float: left;
+    font-size: 16px;
+}
+.nav2 a{
+    color: rgb(51,51,108);
+    transition: all .2s linear;
+    display: inline-block;
+    line-height: 82px;
+}
+.nav2 li:first-child img{
+    width: 140px;
+    height: 25px;
+    vertical-align: middle;
+}
+.nav2 li:last-child img{
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+}
+.nav2 li:not(:last-child){
+    padding-right: 30px;
+}
+.nav2 li:nth-of-type(2){
+    padding-right: 168px;
+    line-height: 82px;
+    vertical-align: middle;
+    font-size: 20px;
+
+}
+.nav2 li:nth-last-of-type(2) div{
+    width: 220px;
+    margin-top: 20px;
+    height: 36px;
+    border: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.nav2 input{
+    display: inline-block;
+    width: 190px;
+    height: 26px;
+    border:none;
+}
+.nav2 input:focus{
+    outline: none;
+}
+.nav2 button{
+    width: 29px;
+    height: 29px;
+    color: rgba(51,51,108,1);
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    position: absolute;
+    top: -7px;
+    right: 2px;
+}
+.nav2 li:nth-child(n+3) a:hover{
+    color: rgb(0,140,255);
+}
+/*左*/
+section{
+    width: 1040px;
+    margin: 20px auto;
+}
+.bgc{
+    background-color: white;
+}
+.secL{
+    width: 710px;
+    float: left ;
+    background-color: rgb(242,242,242) ;
+}
+.secL div:first-child{
+    background-color: white;
+    box-shadow: 1px 1px 10px #e2e2e2;
+}
+.secL div:first-child img{
+    margin: 12px;
+}
+.secL div:nth-child(2){
+    height: 520px;
+    width: 680px;
+    padding:0 15px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px #e2e2e2;
+}
+.secL div:nth-child(2) ul{
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.secL div:nth-child(2) ul li:first-of-type{
+    float: left;
+    line-height: 60px;
+    font-size: 18px;
+
+}
+.secL div:nth-child(2) ul li:not(:first-of-type){
+    float: right;
+    line-height: 60px;
+    padding-left: 30px;
+    font-size: 12px;
+
+}
+/*评论*/
+.secL div:nth-child(2) table{
+    height: 459px;
+    width: 684px;
+}
+.secL div:nth-child(2) table a{
+    text-decoration: none;
+    color: #333;
+}
+.secL div:nth-child(2) table td{
+    width: 340px;
+    height: 70px;
+    padding-bottom: 19px;
+
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.secL div:nth-child(2) table td>img{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 10px ;
+}
+.secL div:nth-child(2) table td>p{
+    padding-left: 60px;
+    padding-top: 5px;
+}
+.secL div:nth-child(2) table td>p:last-child{
+    font-size: 12px;
+    padding-top: 10px;
+    color: rgb(153,153,153);
+}
+.secL div:nth-child(2) table td>p img{
+    width: 14px;
+    height: 14px;
+}
+.secL div:nth-child(2) table td span{
+ display: inline-block;
+    float: right;
+    padding:0 15px;
+}
+/*热评*/
+.discuss{
+    float: left;
+    width: 680px;
+    height: 213px;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #e2e2e2;
+}
+.discuss img{
+    float: left;
+}
+.discuss p{
+    height: 211px;
+    width: 340px;
+    float: right;
+}
+.discuss p span{
+    display: inline-block;
+    width: 340px;
+    padding: 5px 0;
+}
+.discuss p span:not(:first-child){
+    padding-left: 5px;
+}
+.discuss p span:first-child{
+    width: 72px;
+    background-color: rgb(0,140,255);
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+}
+.discuss p span:nth-child(2){
+    font-weight: bold;
+}
+.discuss p span:nth-child(3){
+    font-size: 12px;
+    color: rgb(153,153,153);
+    padding-top: 20px;
+}
+.discuss p span:last-of-type{
+    font-size: 14px;
+}
+/*右*/
+.secR{
+    width: 270px;
+    height: 1395px;
+    float: right;
+    padding: 0 16px;
+}
+.secR>p:first-child{
+    line-height: 60px;
+    vertical-align: middle;
+    background-color: rgb(242,242,242);
+    margin-top: 8px;
+    padding-right: 5px;
+}
+.secR>p:first-child a{
+    margin-top: 0;
+}
+.secR>p:first-child span img{
+    vertical-align: middle;
+    margin: 0 8px;
+}
+.secR>p:first-child span{
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+}
+.secR>p:first-child a{
+    display: inline-block;
+    background-color: rgb(0,140,255);
+    height: 40px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    width: 125px;
+    margin: 10px 0;
+    vertical-align: middle;
+}
+.secR>p:nth-child(2){
+    padding: 10px 0;
+}
+.secR>p:nth-child(2) a:last-child img{
+    margin-left: 9px;
+}
+.secR>p:nth-child(3){
+    padding: 10px 0;
+}
+.secR>p:nth-child(3) img{
+    width: 270px;
+    height: 120px;
+}
+/*表格*/
+.secR table:first-of-type{
+    width: 270px;
+    height: 270px;
+    border-top: 3px solid rgb(0,140,255);
+    text-align: center;
+    vertical-align: middle;
+}
+.secR table:first-of-type td{
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.secR table:first-of-type tr:nth-of-type(2n){
+    background-color: rgb(247,247,247)
+}
+.secR table:first-of-type a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 14px;
+}
+
+.secR table:first-of-type a:hover{
+    color: rgb(0,140,255);
+    background-color: white;
+}
+/*最新活动*/
+.secR h3{
+    margin-top: 15px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.secR .newIM{
+    height: 94px;
+    width: 270px;
+    margin-top: 15px;
+    position: relative;
+}
+.secR .newIM img{
+    width: 123px;
+    height: 94px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.secR .newIM h5{
+    font-size: 14px;
+}
+.secR .newIM p{
+    font-size: 12px;
+    margin: 3px 0 ;
+}
+.secR .newIM a{
+    position: absolute;
+    left: 133px;
+    bottom: 0;
+    padding: 3px;
+    color: white;
+    font-size: 12px;
+    background-color:rgb(0,140,255);
+}
+/*新人课堂*/
+.secR>img{
+    width: 270px;
+    height: 149px;
+    margin: 15px 0;
+}
+.secR table:nth-of-type(2){
+    width: 270px;
+    height: 58px;
+    border-top: 3px solid rgb(0,140,255);
+    text-align: center;
+    vertical-align: middle;
+}
+.secR table:nth-of-type(2) a{
+    font-size: 14px;
+    color: black;
+}
+.secR table:nth-of-type(2) a:hover{
+    opacity: 0.8;
+}
+/*下载更新*/
+.secRbottom{
+    width: 270px;
+    height: 215px;
+}
+.secRbottom h6{
+    margin: 20px 0;
+}
+.secRbottom p{
+    line-height: 24px;
+    font-size: 14px;
+}
+.secRbottom a:not(:last-of-type){
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 14px;
+    color:rgb(0,140,255) ;
+    opacity: 0.7;
+    padding-right: 15px;
+}
+.secRbottom a:not(:last-of-type):hover{
+    opacity: 1;
+}
+.secRbottom a:last-of-type{
+    display: inline-block;
+    width: 270px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    margin-top: 10px;
+    background-color:rgb(0,140,255);
+    color: white;
+}

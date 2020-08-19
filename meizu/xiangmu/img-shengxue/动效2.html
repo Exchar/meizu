@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .father{
+            border: 1px solid;
+            width: 490px;
+            height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        section{
+             border-top: 1px solid;
+             border-bottom: 1px solid;
+            border-color: white;
+             width: 300px;
+             height: 250px;
+            position: absolute;
+            top:70px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            transition: all 1s;
+            opacity: 0;
+         }
+        .father:hover>section {
+            width: 400px;
+            opacity: 1;
+
+        }
+        .father>div{
+            position: absolute;
+            transition: all 1s;
+            /*对于绝对定位的元素，水平居中，用下面的代码
+             margin: 0 auto;
+            left: 0;
+            right: 0;
+            */
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 387px;
+            height: 50px;
+            top:30px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            opacity: 0;
+
+        }
+        .father:hover>div {
+            height: 500px;
+            opacity: 1;
+        }
+        .father img{
+            transition: all 1s;
+            height: 450px;
+            margin-left: -30px;
+            margin-top: -30px;
+        }
+        .father:hover img{
+            transform: scale(0.9) ;
+            /*transform: scale(1.4);*/
+        }
+        hr{
+            position: absolute;
+            top:50%;
+            width: 300px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            transition: all 1s;
+        }
+        .father:hover hr:first-of-type{
+           transform:  rotate(20deg);
+        }
+        .father:hover hr:last-of-type{
+            transform:  rotate(-20deg);
+            /*如果想修改变换的圆心
+            transform-origin:
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <img src="img/lanrenzhijia13.jpg" alt="tupian"/>
+        <!--背景图也可以
+            背景图的大小>background-size
+            背景图的位置》background-position
+        -->
+        <!--<section></section>
+        <div></div>-->
+        <hr/>
+        <hr/>
+    </div>
+
+</body>
+</html>

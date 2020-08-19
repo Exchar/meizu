@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(244,246,250);
+}
+/*导航*/
+header{
+    background-color:#ffffff;
+}
+nav{
+    height: 81px;
+    font-size: 0.8em;
+    background-color: #ffffff;
+    width: 1200px;
+    margin: auto;
+    line-height: 81px;
+}
+nav img{
+    width: 125px;
+    height: 23px;
+    vertical-align: middle;
+    margin-top: -74px;
+}
+nav>div{
+    display: inline-block;
+    width: 1070px;
+}
+nav p{
+    margin-left: 30px;
+    width:400px;
+    float: left;
+    letter-spacing: 0.4em;
+}
+.navRight{
+    float: right;
+}
+.navRight>span:last-of-type{
+    margin-left: 20px;
+}
+.navRight>span:last-of-type:after{
+    content: '>';
+}
+/*主体*/
+#bigbox{
+    width: 1240px;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+}
+#smallbox{
+    background-color: white;
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.title{
+    font-size: 17px;
+    padding: 30px 0 17px 0;
+}
+/*收货人信息*/
+.receiver{
+    margin-bottom: 20px;
+}
+.receiver>div{
+    border: 1px solid lightgrey;
+    width: 290px;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.receiver>div>div a{
+    color: darkgray;
+    font-size: 13px;
+    display: block;
+}
+.receiver>div>div span{
+    font-size: 32px;
+}
+.receiver>div:hover{
+    border: 1px solid cornflowerblue;
+}
+.receiver>div:hover a{
+    color: cornflowerblue;
+}
+/*确认订单信息*/
+.confirm>div{
+    border: 1px solid lightgray;
+    width: 1198px;
+    height: 318px;
+    overflow: hidden;
+}
+.confirm>div ul:first-child{
+    border-bottom: 1px solid lightgray;
+    overflow: hidden;
+    background-color: rgb(246,248,251);
+}
+.confirm>div ul:first-child li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.confirm>div ul:first-child li:not(:first-child){
+    float: right;
+    font-size: 12px;
+    color: grey;
+    font-weight: bold;
+}
+.confirm>div ul:first-child li:first-child{
+    padding-left: 23px;
+    font-size: 14px;
+}
+.confirm>div ul:first-child li:nth-child(2){
+    padding-right: 60px;
+}
+.confirm>div ul:first-child li:nth-child(3){
+    padding-right: 140px;
+}
+.confirm>div ul:first-child li:nth-child(4){
+    padding-right: 120px;
+}
+.confirm>div ul:first-child li:nth-child(5){
+    padding-right: 150px;
+}
+.confirm>div ul:nth-child(2){
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+}
+.confirm>div ul:nth-child(2) li{
+    float: left;
+    height: 140px;
+    line-height: 150px;
+}
+.confirm>div ul:nth-child(2) li:first-child a{
+    margin-left: 25px;
+    float: left;
+    display: inline-block;
+    width: 229px;
+    height: 140px;
+    position: relative;
+}
+.confirm>div ul:nth-child(2) li:first-child a img{
+    vertical-align: middle;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+}
+.confirm>div ul:nth-child(2) li:first-child a span:first-of-type{
+    position: absolute;
+    top: -17px;
+    right: 0;
+    height: 90px;
+    color: black;
+}
+.confirm>div ul:nth-child(2) li:first-child a span:last-of-type{
+    position: absolute;
+    top: 12px;
+    right: 78px;
+    font-size: 14px;
+    color: darkgray;
+    height: 90px;
+}
+.confirm>div ul:nth-child(2) li:not(:first-child){
+    float: right;
+    font-size: 14px;
+}
+.confirm>div ul:nth-child(2) li:nth-child(2){
+    width: 185px;
+    border-left: 1px solid lightgray;
+    text-align: center;
+}
+.confirm>div ul:nth-child(2) li:nth-child(2) span{
+    color: red;
+}
+.confirm>div ul:nth-child(2) li:nth-child(3){
+    padding-right: 45px;
+    color: red;
+}
+.confirm>div ul:nth-child(2) li:nth-child(4){
+    padding-right: 115px;
+}
+.confirm>div ul:nth-child(2) li:nth-child(5){
+    padding-right: 138px;
+}
+.confirm>div ul:nth-child(3){
+    overflow: hidden;
+    height: 75px;
+    border-bottom: 1px solid lightgray;
+}
+.confirm>div ul:nth-child(3) li:first-child{
+    float: left;
+    padding-left: 25px;
+}
+.confirm>div ul:nth-child(3) li:first-child p:first-child{
+    font-size: 14px;
+    color: grey;
+    padding: 16px 0 7px 0;
+}
+.confirm>div ul:nth-child(3) li:first-child p:first-child a{
+    color: cornflowerblue;
+}
+.confirm>div ul:nth-child(3) li:first-child p:last-child{
+    font-size: 13px;
+    color: darkgrey;
+}
+.confirm>div ul:nth-child(3) li:last-child{
+    float: right;
+    line-height: 75px;
+    font-size: 15px;
+    padding-right: 20px;
+}
+.confirm>div ul:nth-child(3) li:last-child span:last-child{
+    color: red;
+    font-size: 21px;
+}
+.confirm>div>p:last-child{
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: darkgrey;
+    padding-left: 25px;
+}
+/*使用优惠抵扣*/
+.discount{
+    padding-top: 10px;
+}
+.discount>div:first-of-type{
+    /*height: 520px;*/
+    border: 1px solid lightgray;;
+}
+.discount>div:first-of-type>p:first-child{
+    border-bottom: 1px solid lightgray;
+    padding-left: 25px;
+    font-size: 14px;
+    height: 50px;
+    background-color: rgb(244,246,250);
+    line-height: 50px;
+    color: cornflowerblue;
+}
+.discount>div:first-of-type>div:first-of-type{
+    height: 180px;
+    padding-left: 25px;
+    border-bottom: 1px solid lightgray;
+}
+.discount>div:first-of-type>div:first-of-type p:first-child{
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.discount>div:first-of-type>div:first-of-type p:first-child span:first-child{
+    font-size: 15px;
+}
+.discount>div:first-of-type>div:first-of-type p:first-child span:nth-child(2){
+    color: red;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.discount>div:first-of-type>div:first-of-type p:first-child span:last-child{
+    font-size: 12px;
+    color: darkgray;
+}
+.discount>div:first-of-type>div:first-of-type>div:last-child{
+    font-size: 13px;
+}
+.discount>div:first-of-type>div:first-of-type>div:last-child>div:first-child{
+    padding-bottom: 20px;
+}
+.discount>div:first-of-type>p:last-of-type{
+    padding-left: 25px;
+    font-size: 14px;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    background-color: rgb(244,246,250);
+    line-height: 50px;
+}
+.discount>div:first-of-type>p:last-of-type:hover{
+    color: cornflowerblue;
+}
+.discount>div:first-of-type>div:last-of-type{
+    height: 135px;
+}
+.discount>div:first-of-type>div:last-of-type>div:first-child{
+    padding-top: 35px;
+    padding-left: 25px;
+}
+.discount>div:first-of-type>div:last-of-type>div:first-child>input{
+    width: 200px;
+    height: 35px;
+    border: 1px solid lightgray;
+    margin-right: 10px;
+}
+.discount>div:first-of-type>div:last-of-type>div:first-child>input:hover{
+    border: 1px solid darkgrey;
+}
+.discount>div:first-of-type>div:last-of-type>div:first-child>input::-webkit-input-placeholder{
+    color: darkgray;
+    padding-left: 10px;
+}
+.discount>div:first-of-type>div:last-of-type>div:first-child>button{
+    margin-left: 5px;
+    height: 35px;
+    width: 105px;
+    font-size: 15px;
+    background-color: rgb(0,195,245);
+    color: white;
+    border: none;
+    padding-bottom: 2px;
+}
+.discount>div:first-of-type>div:last-of-type>div:first-child>a:first-of-type{
+    color: cornflowerblue;
+    padding-left: 5px;
+}
+.discount>div:first-of-type>div:last-of-type>div:first-child>a:last-child{
+    font-size: 13px;
+    color: darkgray;
+}
+.discount>div:first-of-type>div:last-of-type>p{
+    padding-top: 17px;
+    padding-left: 25px;
+    font-size: 12px;
+    color: darkgrey;
+}
+
+/*选择支付方式*/
+.payment{
+    padding-top: 5px;
+}
+.payment>div:first-of-type{
+    height: 280px;
+    border: 1px solid lightgrey;
+}
+.payment>div:first-of-type>ul:first-child{
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 25px;
+    position: relative;
+}
+.payment>div:first-of-type>ul:first-child>li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 45px;
+}
+.payment>div:first-of-type>ul:first-child>li>label{
+    padding-left: 10px;
+}
+.payment>div:first-of-type>ul:first-child>li:nth-child(2)>input{
+    position: absolute;
+    top: 15px;
+    left: 92px;
+}
+.payment>div:first-of-type>ul:first-child>li:nth-child(3)>input{
+    position: absolute;
+    top: 15px;
+    left: 275px;
+}
+.payment>div:first-of-type>ul:first-child>li:nth-child(4)>input{
+    position: absolute;
+    top: 15px;
+    left: 455px;
+}
+.payment>div:first-of-type>ul:last-child{
+    overflow: hidden;
+    margin-top: 60px;
+    margin-left: 25px;
+    position: relative;
+}
+.payment>div:first-of-type>ul:last-child>li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 44px;
+}
+.payment>div:first-of-type>ul:last-child>li>label{
+    padding-left: 10px;
+}
+.payment>div:first-of-type>ul:last-child>li img{
+    border: 1px solid darkgrey;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(2)>input{
+     position: absolute;
+     top: 15px;
+     left: 92px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(3)>input{
+    position: absolute;
+    top: 15px;
+    left: 275px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(4)>input{
+    position: absolute;
+    top: 15px;
+    left: 455px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(5)>input{
+    position: absolute;
+    top: 15px;
+    left: 635px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(6)>input{
+    position: absolute;
+    top: 15px;
+    left: 815px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(7),.payment>div:first-of-type>ul:last-child>li:nth-child(8), .payment>div:first-of-type>ul:last-child>li:nth-child(9),.payment>div:first-of-type>ul:last-child>li:nth-child(10),.payment>div:first-of-type>ul:last-child>li:nth-child(11){
+    margin-top: 16px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(7){
+    margin-left: 108px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(7)>input{
+     position: absolute;
+     top: 70px;
+     left: 92px;
+ }
+.payment>div:first-of-type>ul:last-child>li:nth-child(8)>input{
+    position: absolute;
+    top: 70px;
+    left: 275px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(9)>input{
+    position: absolute;
+    top: 70px;
+    left: 455px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(10)>input{
+    position: absolute;
+    top: 70px;
+    left: 635px;
+}
+.payment>div:first-of-type>ul:last-child>li:nth-child(11)>input{
+    position: absolute;
+    top: 70px;
+    left: 815px;
+}
+/*支付*/
+.buy{
+    width: 310px;
+    float: right;
+    font-size: 14px;
+    color: grey;
+    padding: 30px 0 100px 105px;
+}
+.buy>p>span:last-child,.buy button{
+    float: right;
+}
+.buy>p:nth-child(2){
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+.buy>p:nth-child(3){
+    margin: 20px 0 10px 0;
+}
+.buy>p:nth-child(3)>span:last-child{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.buy button{
+    width: 115px;
+    height: 40px;
+    background-color: rgb(246,101,103);
+    border: none;
+}
+.buy button a{
+    color: white;
+    font-size: 15px;
+}
+/*尾部*/
+footer{
+    width: 100%;
+    height: 206px;
+    font-size: 12px;
+    color: rgb(186,187,192);
+    background-color: white;
+	margin: auto;
+}
+footer>div{
+    width: 1240px;
+    height: 158px;
+    margin: 0 auto;
+    padding-top: 48px;
+    position: relative;
+    background-color: white;
+}
+footer hr{
+    opacity: 0.5;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(186,187,192);
+}
+.footer2 a:hover{
+    color: rgb(0,140,255);
+}
+.footer3 a:hover{
+    color: rgb(0,140,255);
+}
+/*top*/
+.footer1{
+    color: rgb(153,178,256);
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+.footer1>li{
+    float: left;
+    text-align: center;
+    width: 150px;
+    padding-bottom: 10px;
+}
+.footer1 img{
+    width: 50px;
+    height: 39px;
+}
+.footer1 hr{
+    border: 1px solid rgb(186,187,192);
+}
+/*middle*/
+.footer2>li{
+    float: left;
+    text-align: center;
+    width: 60px;
+    margin-top: 20px;
+    background-color: white;
+}
+.footer2>li:nth-last-child(2){
+    width: 100px;
+}
+.footer2>li:nth-last-child(3){
+    width: 125px;
+}
+.footer2>li:not(:first-child){
+    border-left: 1px solid rgb(186,187,192);
+    padding: 0 10px;
+}
+.footer2>li:first-child{
+    padding-right:10px;
+    margin-left: -5px;
+}
+/*bottom*/
+.footer3{
+    height: 28px;
+    background-color: white;
+}
+.footer3>li{
+    float: left;
+    text-align: center;
+    margin-top: 8px;
+}
+.footer3>li:not(:first-child){
+    padding-left: 3px;
+}
+.footer3>li:first-child{
+    padding-right: 10px;
+}
+/*左上*/
+.footer4{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    top: 28px;
+}
+.footer4 p:last-of-type{
+    padding: 10px 0;
+    font-size: 30px;
+    color: rgb(0,140,255);
+}
+.footer4 button{
+    font-size: 14px;
+    border: none;
+    color: white;
+    background-color: rgb(0,140,255);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 15px;
+    line-height: 30px;
+    padding: 0 16px;
+}
+
+
+/*右侧导航*/
+.daohang{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(216,216,216);
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    text-align: center;
+    line-height: 50px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.daohang>a{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.daohang>span{
+    color: white;
+    font-size: 14px;
+}
+.daohang>img{
+    height: 12px;
+    margin:0 8px;
+}
+.daohang:hover{
+    width: 120px;
+    background-color: rgb(163,154,154);
+}
+/*you 2*/
+
+.daohang2{
+    width: 150px;
+    font-size: 0;
+    position: fixed;
+    right: 0;
+    bottom: 160px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.daohang2>span{
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(216,216,216);
+    line-height: 50px;
+    font-size: 14px;
+}
+.daohang2>img{
+    width: 100px;
+    height: 0;
+    transition:all 0.3s ;
+    vertical-align: bottom;
+}
+.daohang2:hover span{
+    background-color: rgb(163,154,154);
+}
+.daohang2:hover .bd{
+    height: 100px;
+}

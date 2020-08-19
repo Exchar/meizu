@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    width: 1200px;
+    height: 68px;
+    margin:  auto;
+    line-height: 68px;
+}
+.logo img{
+    width: 110px;
+    height: 20px;
+}
+section{
+    background-color: rgb(239,253,254);
+   background-image: url(../images-z/pic-flyme.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 750px;
+    background-position: center;
+    position: relative;
+
+}
+.denglu{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto;
+    width: 368px;
+    height: 316px;
+    right: 10%;
+}
+.denglu>img{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.denglu>form{
+    position: absolute;
+    width: 368px;
+    height: 100%;
+}
+.denglu label{
+    width: 120px;
+    font-size: 1.3em;
+    font-weight: 600;
+	display: block;
+	margin:50px auto;
+}
+.sjh{
+    width: 260px;
+    border: 1px solid rgb(184,184,184);
+	margin:20px auto;
+}
+.sjh>select,.sjh>input{
+    height: 40px;
+    border: none;
+}
+.sjh1{
+    outline: none;
+}
+.login{
+    background-color: rgb(56,122,255);
+    color: white;
+    border: none;
+    width: 262px;
+    height: 40px;
+    border-radius: 5px;
+	display: block;
+	margin:20px auto;
+}
+.zhuce{
+    color: rgb(56,122,255);
+	float: left;
+	margin-left:53px ;
+	margin-top: 20px;
+}
+.wjmm{
+    color: rgb(56,122,255);
+	float: right;
+	margin-right: 53px;
+	margin-top: 20px;
+}
+.foot{
+    padding-top: 40px;
+	width: 1240px;
+	margin: auto;
+}
+.foot1>li{
+    float: left;
+    margin-right: 5px;
+    position: relative;
+}
+.foot1>li:not(:nth-of-type(n+3))>a{
+	color: #b0b0b0;
+}
+.foot1>li:not(:nth-of-type(n+3)):hover>a{
+	color: #000000;
+}
+.foot1>li:not(:last-of-type):after{
+    content: '|';
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.foot1{
+    margin-left: 120px;
+    overflow: hidden;
+    width: 1000px;
+    height: 35px;
+    font-size: 0.8em;
+}
+.foot1>li a{
+    color: black;
+}
+ul.foot1>li:last-of-type:after{
+    content: '	\25C4';
+    color: rgb(152,153,153);
+    font-size: 8px;
+    position: absolute;
+    top: 8px;
+}
+.foot1 p,.foot1 a{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+}
+.foot1 p{
+    margin-left: 60px;
+}
+#kefu{
+    margin-left: 20px;
+    background-color: rgb(56,122,255);
+    color: white;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    width: 60px;
+    border-radius: 3px;
+    margin-right: 180px;
+    text-align: center;
+    margin-top: 10px;
+}
+.yuyan:hover .yuyan>ul{
+    display: block;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 1918204 */
+    src: url('//at.alicdn.com/t/font_1918204_fav1td231at.eot');
+    src: url('//at.alicdn.com/t/font_1918204_fav1td231at.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1918204_fav1td231at.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:32px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color:rgb(184,184,184) ;
+    margin-left:  10px;
+}
+.weibo:hover .weibo{
+     color: red;
+ }
+.weixin:hover .weixin{
+    color: green;
+}
+.kongjian:hover .kongjian{
+    color: #fae746;
+}
+.foot2{
+    color:rgb(152,153,153);
+    font-size: 0.7em;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-left: 118px;
+}
+.foot2 img{
+    display: inline-block;
+}
+.foot2 span{
+    margin-right: 5px;
+}
+.foot2 a{
+    color:rgb(152,153,153);
+    margin-right: 5px;
+}

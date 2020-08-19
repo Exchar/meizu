@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="pay.css"/>
+    <link rel="stylesheet" href="../icon/iconfont.css"/>
+	<link rel="shortcut icon" href="../html-tang/favicon.ico"/>
+</head>
+<body>
+    <!-- 导航-->
+    <header>
+        <nav>
+        <a href="../html-tang/index.html""><img src="img-pay/xiazai.png" alt="logo"/></a>
+
+            <div>
+                <p>购物车 > 确认订单 > 在线支付 > 完成</p>
+                <div class="navRight">
+                    <span>我的订单</span>
+                    <span>用户6700...的商城</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 主体-->
+    <section id="bigbox">
+        <section id="smallbox">
+            <!-- 收货人信息-->
+            <div class="receiver">
+                <p class="title">收货人信息</p>
+                <div>
+                    <div>
+                        <a href="#">
+                            <span class="iconfont icon-roundaddfill"></span>
+                            <p>添加新地址</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 确认订单信息-->
+            <div class="confirm">
+                <p class="title">确认订单信息</p>
+                <div>
+                    <ul>
+                        <li>供应商：魅族</li>
+                        <li>配送方式</li>
+                        <li>小计</li>
+                        <li>数量</li>
+                        <li>单价</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="../product/product.html" target="_blank">
+                                <img src="img-pay/1.jpg" alt=""/>
+                                <span>Lifeme 相机包</span>
+                                <span>灰黑</span>
+                            </a>
+                        </li>
+                        <li>快递配送：运费 <span>&yen; 0.00</span></li>
+                        <li>&yen; 129.00</li>
+                        <li>1</li>
+                        <li>&yen; 129.00</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>
+                                发票类型：电子发票
+                                <a href=""><span class="iconfont icon-questionfill"></span></a>
+                                <a href=""><span>&nbsp;修改</span></a>
+                            </p>
+                            <p>发票抬头：默认为收货人姓名</p>
+                        </li>
+                        <li>
+                            <span>合计：</span>
+                            <span>&yen; 129.00</span>
+                        </li>
+                    </ul>
+                    <p>备注：</p>
+                </div>
+            </div>
+            <!-- 使用优惠抵扣-->
+            <div class="discount">
+                <p class="title">使用优惠抵扣</p>
+                <!-- 使用回购金-->
+                <div>
+                    <p>+ 使用回购金</p>
+                    <div>
+                        <p>
+                            <span>我的回购金余额: </span>
+                            <span> &yen; 0.00</span>
+                            <span>
+                                （使用说明: 系统会根据您选购的商品自动计算出最大可以用回购金数量，以及可享受的魅族商城补贴，该补贴不可退。）
+                            </span>
+                        </p>
+                        <div>
+                            <div>
+                                <input type="radio" name="money" value="yes" id="yes" checked/>
+                                <label for="yes">可使用&yen;0.00回购金</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="money" value="no" id="no"/>
+                                <label for="no">暂不使用回购金</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p>+ 使用礼品卡</p>
+                    <div>
+                        <div>
+                            <input type="text" name="card" placeholder="请输入礼品卡号"/>
+                            <input type="text" name="password" placeholder="请输入密码"/>
+                            <button>添加并使用</button>
+                            <a href=""><span class="iconfont icon-question"></span></a>
+                            <a href="">使用规则</a>
+                        </div>
+                        <p>该礼品卡为一次性全额消费卡，选购商品价格需大于礼品卡金额。一次只能消费一张礼卡，该卡经扣款成功则无法退款。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 选择支付方式-->
+            <div class="payment">
+                <p class="title">选择支付方式</p>
+                <div>
+                    <ul>
+                        <li>快捷支付</li>
+                        <li>
+                            <input type="radio" name="quick" value="ant" id="ant"/>
+                            <label for="ant">
+                                <img src="img-pay/13.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="quick" value="alipay" id="alipay" checked/>
+                            <label for="alipay">
+                                <img src="img-pay/6.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="quick" value="wechat" id="wechat"/>
+                            <label for="wechat">
+                                <img src="img-pay/14.png" alt=""/>
+                            </label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>网上银行</li>
+                        <li>
+                            <input type="radio" name="bank" value="china" id="china"/>
+                            <label for="china">
+                                <img src="img-pay/7.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="jianshe" id="jianshe"/>
+                            <label for="jianshe">
+                                <img src="img-pay/12.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="nongye" id="nongye"/>
+                            <label for="nongye">
+                                <img src="img-pay/8.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="gongshang" id="gongshang"/>
+                            <label for="gongshang">
+                                <img src="img-pay/2.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="jiaotong" id="jiaotong"/>
+                            <label for="jiaotong">
+                                <img src="img-pay/5.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="zhaoshang" id="zhaoshang"/>
+                            <label for="zhaoshang">
+                                <img src="img-pay/10.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="youzheng" id="youzheng"/>
+                            <label for="youzheng">
+                                <img src="img-pay/11.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="xinye" id="xinye"/>
+                            <label for="xinye">
+                                <img src="img-pay/3.png" alt=""/>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bank" value="shanghai" id="shanghai"/>
+                            <label for="shanghai">
+                                <img src="img-pay/4.png" alt=""/>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 支付-->
+            <div class="buy">
+                <p>
+                    <span>总金额：</span>
+                    <span>&yen; 129.00</span>
+                </p>
+                <p>
+                    <span>运费</span>
+                    <span>&yen; 0.00</span>
+                </p>
+                <p>
+                    <span>应付：</span>
+                    <span>&yen; 129.00</span>
+                </p>
+                <button><a href="">下单并支付</a></button>
+            </div>
+        </section>
+    </section>
+    <!-- 尾部-->
+    <footer>
+        <div>
+            <ul class="footer1">
+                <li>
+                    <a href="">
+                        <img src="img-pay/FooterU1_1.png">
+                        <p>满80免运费</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img-pay/FooterU1_2.png">
+                        <p>100+城市次日送达</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img-pay/FooterU1_3.png">
+                        <p>7天无理由退货</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img-pay/FooterU1_4.png">
+                        <p>15天换货保障</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img-pay/FooterU1_5.png">
+                        <p>1年免费保修</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img-pay/FooterU1_6.png">
+                        <p>上门快修</p>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <ul class="footer2">
+                <li>
+                    <a href="">了解魅族</a>
+                </li>
+                <li>
+                    <a href="">加入我们</a>
+                </li>
+                <li>
+                    <a href="">联系我们</a>
+                </li>
+                <li>
+                    <a href="">Flyme</a>
+                </li>
+                <li>
+                    <a href="">魅族社区</a>
+                </li>
+                <li>
+                    <a href="">天猫旗舰店</a>
+                </li>
+                <li>
+                    <a href="">问题反馈</a>
+                </li>
+                <li>
+                    <a href="">线上销售授权名单公示</a>
+                </li>
+                <li>
+                    <a href="">出版物经营许可证</a>
+                </li>
+                <li>
+                    <a href="">简体中文</a>
+                </li>
+            </ul>
+            <ul class="footer3">
+                <li>@2019 Meizu Telecom Equipment Co, Ltd. All rights reserved.</li>
+                <li>
+                    <a href="">粤ICP备13003602号</a>
+                </li>
+                <li>
+                    <a href="">台字B2-20170010</a>
+                </li>
+                <li>
+                    <a href="">营业执照</a>
+                </li>
+                <li>
+                    <a href="">法律声明</a>
+                </li>
+                <li>
+                    <a href="">粤公网安备44049102496009号</a>
+                </li>
+            </ul>
+            <div class="footer4">
+                <p>周一至周日8:00-20:00</p>
+                <p>400-788-3333</p>
+                <button>在线客服</button>
+            </div>
+        </div>
+    </footer>
+	    <!-- 右侧导航-->
+	    <div class="daohang">
+	        <a href="#"><img src="img-pay/16.png" alt=""/></a>
+	        <span>回到顶部</span>
+	    </div>
+	    <div class="daohang2">
+	        <img src="img-pay/15.png" alt="" class="bd"/>
+	        <span>APP</span>
+	    </div>
+
+</body>
+</html>

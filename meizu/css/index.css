@@ -1,0 +1,550 @@
+
+body{
+	background-color: #F4F4F4;
+	overflow-x: hidden;
+}
+
+header#topNav a{
+	color: #d4d4d4;
+}
+header#topNav{
+	background-color: rgba(255, 255, 255, 0.0);
+}
+section>div:not(:first-of-type) ul>li{
+	position: relative;
+}
+/* 主要内容 */
+.banner{
+	padding-top: 762px;
+	background-color: white;
+}
+.banner>video{
+	position: absolute;
+	top: 0;
+	width: 1920px;
+	z-index: 2;
+}
+.banner>.bannerBot{
+	width: 1240px;
+	margin: auto;
+	padding-top: 140px;
+	overflow: hidden;
+
+}
+.bannerBot>li{
+	float: left;
+	text-align: center;
+	width: 22%;
+	transform: scale(.8);
+	color: grey;
+	
+}
+.bannerBot>li:not(:nth-of-type(4)){
+	margin-right: 4%;
+}
+.bannerBot>li>p:nth-of-type(1){
+	font-weight: 500;
+	font-size: 1.6em;
+	color: #000000;
+}
+.mainPhone,.mainPeijian,.mainLife,.mainSound{
+	padding-top: 57px;
+}
+/* 所有的标题 */
+.mainPhone>h1,.mainLife>h1,.mainSound>h1,.mainPeijian>h1{
+	font-weight: 500;
+	text-align: center;
+	color: #000000;
+}
+/* 分区 banner图 */
+.areaBanner{
+	height: 450px;
+	margin-top: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	background-image: url(../imagesIndex/04.jpg);
+}
+/* banner图里面的超链接 */
+.areaBanner>a{
+	display: block;
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	transition: all .2s;
+}
+.areaBanner:hover>a{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+/* 价格 */
+.price{
+	color: #D01818;
+	font-size: 1.2em;
+}
+small.oldPrice{
+	color: #000000;
+	text-decoration: line-through;
+}
+/* 统一设置图片大小 */
+.mainPeijian img,.mainLife img,.mainPhone img,.mainSound img{
+	width: 70%;
+	margin: auto;
+}
+.mainPeijian p,.mainPhone p,.mainSound p,.mainLife p{
+	margin-top: 10px;
+}
+/* 统一设置ul */
+.mainPhone ul,.mainLife ul,.mainSound ul,.mainPeijian ul,.mainComm ul,.flyme ul,.ourVideo ul{
+	width: 1240px;
+	margin: auto;
+}
+.mainPhone ul{
+	height: 1055px;
+}
+.mainLife ul,.mainSound ul,.mainPeijian ul{
+	height: 1155px;
+}
+/* 统一设置li */
+.mainPhone li,.mainLife li,.mainSound li,.mainPeijian li{
+	width: 303px;
+	height: 375px;
+	text-align: center;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 10px;
+	background-color: #fff;
+	padding-top: 40px;
+	position: relative;
+}
+#phoneBig1,#phoneBig2{
+	width: 615px;
+	height: 610px;
+}
+/* 手机部分 */
+.mainPhone .areaBanner{
+		background-image: url(../imagesIndex/04.jpg);
+}
+#phoneBig1{
+	margin-right: 10px;
+}
+.mainPhone li:nth-of-type(n+3):not(:last-of-type){
+	margin-right: 9px;
+}
+#phoneExp{
+	margin-right: 10px;
+}
+
+.phoneList>li:first-child>p:first-of-type,.phoneList>li:nth-child(2)>p:first-of-type{
+	font-size: 1.6em;
+}
+.phoneList>li:nth-child(n+3)>p:first-of-type{
+	font-size: 1.1em;
+}
+.phoneList>li:nth-child(n+3)>p:nth-of-type(2){
+	color: #919191;
+}
+.phoneList span,.soundList span,.lifeList span,.peijianList span{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+	border-radius: 50%;
+	color: #ffffff;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	text-align: center;
+	line-height: 60px;
+}
+
+
+/* 统一设置结构相同的三部分 */
+/* 间距 */
+.soundList li:not(:nth-of-type(4n)),.peijianList li:not(:nth-of-type(4n)),.lifeList li:not(:nth-of-type(4n)){
+	margin-right: 9px;
+}
+.soundList>li>p:nth-of-type(2),.lifeList>li>p:nth-of-type(2),.flymeList>li>p:nth-of-type(2),.peijianList>li>p:nth-of-type(2){
+	color: #919191;
+}
+.soundList li:nth-child(4n+1)>img,.peijianList li:nth-child(4n+1)>img,.lifeList li:nth-child(4n+1)>img{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	z-index: 0;
+}
+.soundList li:nth-child(4n+1)>p,.peijianList li:nth-child(4n+1)>p,.lifeList li:nth-child(4n+1)>p{
+	position: relative;
+	color: #ffffff;
+	z-index: 2;
+	top: 212px;
+}
+.soundList li:nth-child(4n+1)>p:first-of-type,.peijianList li:nth-child(4n+1)>p:first-of-type,.lifeList li:nth-child(4n+1)>p:first-of-type{
+	font-size: 1.3em;
+	font-weight: 500;
+}
+.soundList li:nth-child(4n+1)>p:nth-of-type(2),.peijianList li:nth-child(4n+1)>p:nth-of-type(2),.lifeList li:nth-child(4n+1)>p:nth-of-type(2){
+	font-weight: .8em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.soundList li:nth-child(4n+1)>p:nth-of-type(3),.peijianList li:nth-child(4n+1)>p:nth-of-type(3),.lifeList li:nth-child(4n+1)>p:nth-of-type(3){
+	color: #ffff00;
+	font-weight: 500;
+}
+/* 音乐部分 */
+.mainSound .areaBanner{
+	background-image: url(../imagesIndex/45.jpg);
+}
+
+/* 配件部分 */
+.mainPeijian .areaBanner{
+	background-image: url(../imagesIndex/56.jpg);
+}
+/* 生活部分 */
+.mainLife .areaBanner{
+	background-image: url(../imagesIndex/57.jpg);
+	
+}
+.flyme,.mainComm,.ourVideo{
+	margin-bottom: 80px;
+}
+/* 社区热贴 */
+.mainComm{
+	margin-top: 80px;
+	text-align: center;
+}
+.mainComm>h3,.flyme>h3,.ourVideo>h3{
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.commList>li>img,.flymeList>li>img,.videoList>li>img{
+	width: 100%;
+}
+.commList{
+	overflow: hidden;
+}
+.commList>li{
+	width: 303px;
+	height: 388px;
+	box-sizing: border-box;
+	float: left;
+	margin-bottom: 9px;
+	overflow: hidden;
+}
+.commList>li:not(:nth-of-type(4n)),.videoList>li:not(:nth-of-type(4n)){
+	margin-right: 9px;
+}
+.desc{
+	height: 35px;
+	padding-top: 10px;
+}
+.desc>span:first-child{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: -120px;
+	vertical-align: middle;
+}
+.desc>span:first-child>{
+	width: 100%;
+	height: 100%;
+}
+.desc>span:last-child{
+	height: 35px;
+	line-height: 35px;
+	display: inline-block;
+	margin-left: 20px;
+	
+}
+.commList>li>p:first-of-type{
+	text-align: left;
+	font-size: 1.1em;
+	line-height: 1.8em;
+	width: 94%;
+	margin:10px auto;
+	color: #6C6C6C;
+}
+.commList>li>p:last-of-type{
+	text-align: left;
+	position: absolute;
+	bottom: 34px;
+	left: 10px;
+	font-size: .8em;
+	color: #B5B5B5;
+}
+/* flyme */
+.flyme,.ourVideo{
+	overflow: hidden;
+}
+.flymeList>li,.videoList>li{
+	width: 303px;
+	height: 244px;
+	box-sizing: border-box;
+	float: left;
+	margin-bottom: 9px;
+}
+.flymeList>li:first-child{
+	width: 615px;
+	margin-right: 9px;
+}
+.flymeList>li:nth-child(2){
+	margin-right: 9px;
+}
+.flymeList>li:nth-of-type(n+4):not(:last-of-type){
+	margin-right: 9px;
+}
+.flymeList p,.videoList p{
+	text-align: center;
+	color: #515151;
+	height: 55px;
+	line-height: 55px;
+}
+
+/* 精彩视频 */
+.videoList>li>div{
+	position: relative;
+}
+.videoList>li>div>img:first-of-type{
+	width: 100%;
+}
+.videoList>li>div>span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	background-image: url(../imagesIndex/49.png);
+		background-size: cover;
+}
+
+
+
+/* 此处是动效 */
+.areaBanner>div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: #e1e1e1;
+	opacity: 0;
+}
+.out{
+	transition: all .1s;
+}
+.phoneList>li,.lifeList>li,.peijianList>li,.soundList>li,.commList>li,.videoList>li,.flymeList>li{
+	transition: all .5s;
+}
+section>div:not(:first-of-type) ul>li>a{
+	transition: all .6s;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+section>div:not(:first-of-type) ul>li:hover {
+	box-shadow: 4px 6px 12px 2px #bebebe;
+}
+/* 此处是底部导航 */
+
+
+
+/* 首页动画 */
+
+.print1,.print2,.print3,.print4,.print5,.print6{
+	position: absolute;
+	color: white;
+	font-size: 3em;
+	z-index: 100;
+	top: 200px;
+	left: 42%;
+	overflow: hidden;
+	height: 1.4em;
+	width: 0em;
+
+}
+.banner>.print1{
+	top: 300px;
+	left: 42%;
+	animation: print1 10s ease alternate 1s;
+	overflow: hidden;
+	visibility: hidden;
+	animation-iteration-count: 1;
+	background: linear-gradient(to right,#01ddff,#10acff,#008CFF);
+	-webkit-background-clip: text;
+	color: transparent;
+	
+}
+.banner>.print2{
+	top:220px;
+	left: 80%;
+	animation: print4 8s ease-in-out alternate 13s;
+	text-overflow:unset;
+	overflow: hidden;
+	width: 0em;
+	transform: scale(1);
+	font-size: 2em;
+	width: 6em;
+	visibility: hidden;
+	animation-iteration-count: 1;
+}
+.banner>.print3{
+	top: 280px;
+	left: 60%;
+	animation: print3 3s ease-in-out alternate 20s;
+	width: 0em;
+	transform: scale(1.1);
+	animation-iteration-count: 1;
+}
+.banner>.print4{
+	top: 120px;
+	left: 20%;
+	animation: print3 6s ease-in-out alternate 23.5s;
+	width: 0em;
+	transform: scale(1.1);
+	animation-iteration-count: 1;
+}
+.banner>.print5{
+	top: 120px;
+	left: 70%;
+	animation: print3 3.5s ease-in-out alternate 24s;
+	animation-iteration-count: 1;
+	width: 0em;
+	transform: scale(2);
+	animation-iteration-count: 1;
+}
+.banner>.print6{
+	top: 500px;
+	left: 22%;
+	animation: print4 10s ease-in-out alternate 35s;
+	animation-iteration-count: 1;
+	transform: scale(1);
+	width: 30em;
+	visibility: hidden;
+}
+@keyframes print1{
+	30%{
+		width: 30em;
+		transform: scale(1.4);
+		visibility: visible;
+		letter-spacing: 2em;
+	}
+	60%{
+		width: 30em;
+		transform: scale(1.4);
+		visibility: visible;
+		opacity: 1;
+		letter-spacing: 2em;
+		
+	}
+	100%{
+		width: 6em;
+		opacity: 0;
+		transform: scale(1);
+		letter-spacing: 2em;
+	}
+}
+@keyframes print2{
+	50%{
+		width: 6em;
+		transform: scale(1);
+		visibility: visible;
+	}
+	80%{
+		width: 6em;
+		transform: scale(1);
+		visibility: visible;
+	}
+	100%{
+		width: 6em;
+		opacity: 0;
+		transform: scale(1);
+		visibility: visible;
+	}
+}
+@keyframes print3{
+	40%{
+		width: 14em;
+		transform: scale(1);
+		visibility: visible;
+	}
+	100%{
+		width: 14em;
+		transform: scale(1);
+		visibility: visible;
+		opacity: 0;
+	}
+}
+@keyframes print4{
+
+	30%{
+		width: 30em;
+		opacity: 1;
+		transform: scale(1.2);
+		visibility: visible;
+		letter-spacing: 0.2em;
+	}
+	60%{
+		width: 30em;
+		transform: scale(1.2);
+		visibility: visible;
+		opacity: 1;
+		letter-spacing: 0.2em;
+		
+		
+	}
+	100%{
+		width: 30em;
+		opacity: 1;
+		transform: scale(2);
+		letter-spacing: 0.2em;
+		visibility: visible;
+	}
+}
+
+
+/* 返回顶部按钮 */
+.returnTop{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	opacity: .6;
+	transition: all .6s;
+	
+}
+.returnTop>a{
+	display: block;
+	height: 140px;
+	width: 140px;
+	text-align: center;
+	position: relative;
+}
+.returnTop>a>img{
+	height: 120px;
+	position: absolute;
+	left: 14px;
+	top: 10px;
+}
+.returnTop>a>p{
+	font-size: .6em;
+	position: absolute;
+	bottom: 20px;
+	left: 30px;
+	color:#000000;
+	
+}
+.returnTop:hover{
+	opacity: 1;
+}

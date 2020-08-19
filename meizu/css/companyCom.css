@@ -1,0 +1,307 @@
+*{
+	margin:0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.banner{
+	height: 680px;
+	background: url(../imagescompany/5.jpg) no-repeat center center;
+	color: #858585;
+	overflow: hidden;
+}
+button>a{
+	color: #ffffff;
+}
+.banner a{
+	color: #858585;
+}
+.banner>p:first-of-type{
+	font-size: 4em;
+	font-weight:500;
+	color: #ffffff;
+	margin-left: 20px;
+	width: 1200px;
+	margin: 200px auto;
+	margin-bottom: 10px;
+}
+.banner>p:nth-of-type(2){
+	margin-top: 10px;
+	font-size: 1.4em;
+	color: #ffffff;
+	width: 1200px;
+	margin:  0 auto;
+}
+.topNav{
+	height: 90px;
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+}
+.logo{
+	height: 90px;
+	float: left;
+	line-height: 90px;
+}
+.logo img{
+	height: 25px;
+	vertical-align: middle;
+}
+.navRight{
+	float: left;
+	width: 60%;
+	margin-left: 20%;
+	height: 90px;
+	line-height: 90px;
+}
+.navRight>li{
+	float: left;
+	width: 16.6%;
+	text-align: center;
+	position: relative;
+	
+}
+.ali{
+	transition: all .4s;
+	position: relative;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+}
+.ali::after{
+	content: "";
+	border-bottom: 4px solid #575a62;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	height: 2px;
+	transition: all .2s;
+	width: 0px;
+	transform: rotate(-30deg);
+	transform-origin: left bottom; 
+}
+.navRight>li:nth-of-type(1)>.ali::after{
+	left: -2px;
+}
+.navRight>li:nth-of-type(3)>.ali::after{
+	left: -7px;
+}
+.navRight>li>.ali:hover::after{
+	width: 64px;
+	transform: rotate(0deg);
+}
+.navRight>li:nth-of-type(5)>.ali::after{
+	left: -16px;
+}
+.navRight>li:hover .ali{
+	color: #c6c6c6;
+}
+a.active{
+	color: #ffffff;
+}
+
+
+/* 主要内容 */
+
+/* 统一设置 */
+
+.part1>p:first-of-type,.part2>p:first-of-type,.part3>p:first-of-type{
+	font-size: 3.1em;
+	position: absolute;
+	top: 150px;
+}
+.part1>p:nth-of-type(2),.part2>p:nth-of-type(2),.part3>p:nth-of-type(2){
+	font-size: 1.3em;
+	color: #A09A9B;
+	position: absolute;
+	top: 220px;
+}
+.part1>ul,.part2>ul,.part3>ul{
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+	height: 120px;
+}
+div.part2>ul,div.part3>ul{
+	height: 80px;
+}
+.part1 li,.part2 li,.part3 li{
+	float: left;
+	width: 20%;
+	text-align: left;
+	margin-top: 26px;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	
+}
+li>span{
+	line-height: 24px;
+	height: 24px;
+	display: inline-block;
+	position: absolute;
+	left: 20%;
+}
+.part1 img:first-of-type,.part3 img:first-of-type{
+	height: 546px;
+	position: absolute;
+	right: 0;
+}	
+.part2 img:first-of-type{
+	height: 546px;
+	position: absolute;
+	left: 0;
+}
+.part2,.part3{
+	height: 623px;
+	width: 1200px;
+	margin:80px auto;
+	position: relative;
+}
+/* 第一部分 */
+.part1{
+	height: 673px;
+	width: 1200px;
+	margin: auto;
+	margin-top: 80px;
+	position: relative;
+}
+.part1>p:first-of-type,.part3>p:first-of-type{
+left: 0;
+	
+
+}
+.part1>p:nth-of-type(2),.part3>p:nth-of-type(2){
+	left: 0;
+	
+	
+}
+/* 第二部分 */
+.part2>p:first-of-type{
+	right: 100px;
+	
+
+}
+.part2>p:nth-of-type(2){
+	right: 100px;
+	
+	
+}
+/* 所有的小圆圈 */
+.littleCircle{
+	width:24px ;
+	height: 24px;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+	background-color: #E0F2FF;
+}
+.littleCircle>span{
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	border-radius: 50%;
+	border: 3px solid #2DA7FF;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	animation: sizeTrans 2s ease-in-out infinite;
+	animation-play-state: paused;
+}
+.littleCircle>span:hover{
+	animation-play-state: running;
+}
+@keyframes sizeTrans{
+	0%{
+	transform: scale(1);
+	transform-origin: center center;
+	}
+	50%{
+		transform: scale(1.4);
+		transform-origin: center center;
+	}
+	100%{
+		transform:scale(1);
+		transform-origin: center center;
+	}
+}
+.part4{
+	width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	height: 437px;
+}
+.descItem{
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+	border-radius: 12px;
+	height: 437px;
+	background-image: linear-gradient(-45deg,rgba(235,247,255,.1) 50%,#ebf7ff);
+	text-align: center;
+}
+.descItem>p{
+	font-size: 2em;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.descItem li{
+	position: relative;
+	margin: auto;
+	width: 50%;
+	right: -34px;
+}
+.descItem li>span,.littleCircle{
+	margin-bottom: 20px;
+}
+.descItem .littleCircle{
+	left: -100px;
+}
+
+
+
+
+
+/* 底部内容 */
+footer{
+	height: 250px;
+	margin-top: 100px;
+	color: #ffffff;
+}
+.footer{
+	height: 100%;
+	width: 100%;
+	background-image: url(../imagescompany/4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center; 
+	padding-top: 100px;
+	position: relative;
+}
+.footer>p{
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+.footer>button{
+	width: 140px;
+	height: 46px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border:1px solid #ffffff;
+	background-color: rgba(0,0,0,0);
+	border-radius: 2px;
+	color: #ffffff;
+	transition: all .2s;
+	margin-top: 50px;
+}
+.footer>button:hover{
+		background-color: rgb(39, 179, 255);
+		border: none;
+}

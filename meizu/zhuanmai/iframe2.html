@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iframe2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 1240px;
+            height: 465px;
+            position: relative;
+
+        }
+        form{
+            width: 290px;
+            height: 600px;
+        }
+        #iframe2_1,#iframe2_2{
+            width: 142px;
+            height: 30px;
+            border: 1px solid rgba(0,0,0,0.3);
+            font-size: 16px;
+        }
+        div{
+            width: 290px;
+            height: 30px;
+            position: relative;
+            margin-top: 5px;
+        }
+        button{
+            height: 31px;
+            padding:0 13px ;
+            font-size: 16px;
+            float: right;
+            border: none;
+            background-color: rgb(0,140,255);
+            position: absolute;
+            right: 1px;
+        }
+        input{
+            width: 226px;
+            height: 25px;
+            float: left;
+        }
+        input:focus{
+            border: 2px solid;
+            border-radius:0 ;
+        }
+        iframe{
+            width: 285px;
+            height: 400px;
+        }
+        img{
+            width: 800px;
+            height: 466px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="#">
+            <select name="sheng" id="iframe2_1">
+                <option value="1" selected="selected">四川省</option>
+                <option value="2">北京省</option>
+                <option value="3">黑龙江省</option>
+                <option value="4">安徽省</option>
+                <option value="5">湖北省</option>
+                <option value="6">福建省</option>
+                <option value="7">湖南省</option>
+            </select>
+            <select name="sheng" id="iframe2_2">
+                <option value="1" selected="selected">成都市</option>
+                <option value="2">吉林市</option>
+                <option value="3">达州市</option>
+                <option value="4">哈尔滨市</option>
+                <option value="5">山东市</option>
+                <option value="6">牧马城市</option>
+                <option value="7">重庆市</option>
+            </select>
+            <div>
+                <input type="text">
+                <button>搜索</button>
+            </div>
+            <iframe src="zhuanmaiP_2.html" frameborder="0" scrolling="yes">
+            </iframe>
+        </form>
+
+    </section>
+    <img src="imagesZ/zhuanmaiP_2.jpg">
+</body>
+</html>
